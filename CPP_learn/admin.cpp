@@ -13,7 +13,7 @@ private:
 };
 
 //函数实现
-void Admin::setAdmin(char name[20])
+void Admin::setAdmin(char name[20])//记录用户名函数
 {
     int i=0;
     char name;
@@ -22,11 +22,11 @@ void Admin::setAdmin(char name[20])
         name[i]=name;
     }
 }
-void Admin::setNotes(char note1[])
+void Admin::setNotes(char note1[])//记录备注函数
 {
     Note[] = note1;
 }
-void Admin::printAdmin()
+void Admin::printAdmin()//输出函数
 {
     cout <<"Admin:"<< Admin_name << endl
         <<"Notes:"<< Note << endl;
