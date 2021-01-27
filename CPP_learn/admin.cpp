@@ -1,17 +1,18 @@
 #include <iostream>
 using namespace std;
 
-class Admin
+class Admin //创建一个类，记录用户名，备注
 {
 public:
-    void setAdmin(char Name[]);
-    void setNotes(char Note[]);
-    void printAdmin();
+    void setAdmin(char Name[]);//记录用户名
+    void setNotes(char Note[]);//记录备注
+    void printAdmin();//打印信息
 
 private:
-    char Admin_name[20], Note[40];
+    char Admin_name[20], Note[40];//定义变量
 };
 
+//函数实现
 void Admin::setAdmin(char name[20])
 {
     int i=0;
@@ -25,13 +26,13 @@ void Admin::setNotes(char note1[])
 {
     Note[] = note1;
 }
-
 void Admin::printAdmin()
 {
     cout <<"Admin:"<< Admin_name << endl
         <<"Notes:"<< Note << endl;
 }
 
+//balabala
 int main(void)
 {
     char name[20], note1[40];
